@@ -26,3 +26,7 @@ body {
 #menu:checked + div {
   transform: translate(0);
 }
+
+#page > p {
+  @apply flex flex-col items-center w-full
+}

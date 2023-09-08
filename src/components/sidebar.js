@@ -25,7 +25,7 @@ export default function Sidebar() {
       <input type="checkbox" className="hidden" id="menu"/>
       <div className="w-full lg:w-1/4 h-full flex select-none fixed left-0 top-0 z-30 lg:z-10 lg:pt-[7.5rem] [transform:translate(-95%)] duration-500 bg-[rgb(var(--background-rgb))]" id="sidebar">
         <nav className="w-[95%] h-full py-4 px-[4.166666666666667%]">
-          <ol className="flex flex-col items-center gap-2">
+          <ol className="flex flex-col items-center justify-around h-full">
             {pages.map(({title, href}, ) => {
               const active = currentPage === href;
 
@@ -41,7 +41,7 @@ export default function Sidebar() {
             })}
           </ol>
         </nav>
-        <label htmlFor="menu" className="min-w-fit w-[5%] h-full flex flex-col justify-center items-center bg-gray-300 rotate-0"><span>⇥</span></label>
+        <label htmlFor="menu" className="min-w-fit w-[5%] h-full flex flex-col justify-center items-center bg-gray-300 dark:bg-gray-800 rotate-0"><span>⇥</span></label>
       </div>
     </>
   )

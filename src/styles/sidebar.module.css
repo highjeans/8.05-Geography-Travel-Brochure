@@ -1,0 +1,3 @@
+.currentPage > li {
+    @apply border-0 bg-[rgb(var(--foreground-rgb),0.1)] hover:bg-[rgb(var(--foreground-rgb),0.15)] active:bg-[rgb(var(--foreground-rgb),0.2)]
+}

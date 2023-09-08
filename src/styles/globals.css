@@ -18,3 +18,11 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
+
+#menu:checked + div > label {
+  @apply rotate-180;
+}
+
+#menu:checked + div {
+  transform: translate(0);
+}

@@ -14,7 +14,7 @@ const pages = [
   { title: 'Climate', href: "/climate" },
   { title: 'Transportation', href: "/transportation" },
   { title: 'Culture', href: "/culture" },
-  { title: 'Languages', href: "/laguages" },
+  { title: 'Languages', href: "/languages" },
   { title: 'Food', href: "/food" },
 ]
 

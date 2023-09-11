@@ -22,7 +22,7 @@ export default function Sidebar() {
   const currentPage = usePathname();
   return (
     <>
-      <input type="checkbox" className="hidden" id="menu"/>
+      <input type="checkbox" className="hidden" id="menu" defaultChecked={window.innerWidth >= 1024}/>
       <div className="w-full lg:w-1/4 h-full flex select-none fixed left-0 top-0 z-30 lg:z-10 lg:pt-[7.5rem] [transform:translate(-95%)] duration-500 bg-[rgb(var(--background-rgb))]" id="sidebar">
         <nav className="w-[95%] h-full py-4 px-[4.166666666666667%]">
           <ol className="flex flex-col items-center justify-around h-full">

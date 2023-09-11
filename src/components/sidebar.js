@@ -2,6 +2,7 @@
 import { usePathname } from 'next/navigation'
 import styles from '@styles/sidebar.module.css'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 const pages = [
   { title: 'Home', href: "/" },
@@ -20,9 +21,15 @@ const pages = [
 
 export default function Sidebar() {
   const currentPage = usePathname();
+  const [windowWidth, setWindowWidth] = useState(1024);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, [])
+
   return (
     <>
-      <input type="checkbox" className="hidden" id="menu" defaultChecked={window.innerWidth >= 1024}/>
+      <input type="checkbox" className="hidden" id="menu" defaultChecked={windowWidth >= 1024}/>
       <div className="w-full lg:w-1/4 h-full flex select-none fixed left-0 top-0 z-30 lg:z-10 lg:pt-[7.5rem] [transform:translate(-95%)] duration-500 bg-[rgb(var(--background-rgb))]" id="sidebar">
         <nav className="w-[95%] h-full py-4 px-[4.166666666666667%]">
           <ol className="flex flex-col items-center justify-around h-full">

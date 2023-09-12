@@ -38,7 +38,7 @@ export default function Sidebar() {
 
               return (
                 <Link
-                  className={(active ? styles.currentPage + " " : "") + "w-full"}
+                  className={(active ? styles.currentPage + " " : "") + "w-full rounded-2xl"}
                   href={href}
                   key={title}
                 >

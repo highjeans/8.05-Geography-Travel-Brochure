@@ -30,3 +30,7 @@ body {
 #page > p {
   @apply flex flex-col items-center w-full
 }
+
+th, td {
+  @apply border p-3
+}

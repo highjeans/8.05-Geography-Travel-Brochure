@@ -11,7 +11,6 @@ const pages = [
   { title: 'Major Places', href: "/major-places" },
   { title: 'Historic Sites/Landmarks', href: "/historic-sites" },
   { title: 'Outdoor Activities', href: "/activities" },
-  { title: 'Entertainment', href: "/entertainment" },
   { title: 'Climate', href: "/climate" },
   { title: 'Transportation', href: "/transportation" },
   { title: 'Culture', href: "/culture" },

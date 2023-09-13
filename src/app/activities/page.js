@@ -1,9 +1,9 @@
 const metadata = {
-  title: "Unimplemented",
+  title: "Outdoor Activities",
 }
 
-export default function Unimplemented() {
+export default function Activities() {
   return (
-    <p className="mt-10">This page is unimplemented.</p>
+    <p className="mt-10 px-52">Taiwan has many different activities for you to enjoy! There are 9 different national parks, where you can go hiking to your heart{"'"}s content. There{"'"}s many other activities you can do, including surfing, climbing, and even paragliding!</p>
   )
 }
